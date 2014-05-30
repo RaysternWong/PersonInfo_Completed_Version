@@ -1,0 +1,55 @@
+---
+:source:
+  :path: test
+  :file: test_PersonInfo.c
+:successes:
+- :test: test_setFirstName_given_Scarlet_should_return_1_for_ValidName
+  :line: 13
+  :message: ''
+- :test: test_setFirstName_given_OverallName_should_return_0
+  :line: 25
+  :message: ''
+- :test: test_setFirstName_given_empty_should_return_0
+  :line: 34
+  :message: ''
+- :test: test_setLastName_given_OverallName_should_return_0
+  :line: 58
+  :message: ''
+- :test: test_setLastName_given_empty_should_return_0
+  :line: 67
+  :message: ''
+- :test: test_setAge_given_21_should_return_1
+  :line: 78
+  :message: ''
+- :test: test_setAge_given_negative1_should_return_0
+  :line: 87
+  :message: ''
+- :test: test_setAge_given_188_should_return_0
+  :line: 96
+  :message: ''
+- :test: test_setHeight_given_2_should_return_1
+  :line: 106
+  :message: ''
+- :test: test_setTelephone_given_12300456_should_return_1
+  :line: 135
+  :message: ''
+- :test: test_setTelephone_given_023000456_should_return_0
+  :line: 144
+  :message: ''
+- :test: test_setTelephone_given_1234567_should_return_0
+  :line: 153
+  :message: ''
+- :test: test_setTelephone_given_12345678_should_return_0
+  :line: 162
+  :message: ''
+:failures:
+- :test: test_setLastName_given_Holmes_should_return_1_for_ValidName
+  :line: 52
+  :message: Expected 1 Was 0
+:ignores: []
+:counts:
+  :total: 14
+  :passed: 13
+  :failed: 1
+  :ignored: 0
+:stdout: []
