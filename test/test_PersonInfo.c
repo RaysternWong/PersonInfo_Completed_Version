@@ -1,13 +1,6 @@
 #include "unity.h"
 #include "PersonInfo.h"
 
-void setUp(void)
-{
-}
-
-void tearDown(void)
-{
-}
 
 // FirstName test
 void test_setFirstName_given_Scarlet_should_return_1_for_ValidName(void)
@@ -36,6 +29,16 @@ void test_setFirstName_given_empty_should_return_0(void)
 	struct PersonInfo_t PersonInfo;
 	
 	result = setFirstName(&PersonInfo,"");
+	TEST_ASSERT_EQUAL(0 , result);
+}
+
+
+void test_setFirstName_given_1234_should_return_0(void)
+{
+	int result;
+	struct PersonInfo_t PersonInfo;
+	
+	result = setFirstName(&PersonInfo,"1234");
 	TEST_ASSERT_EQUAL(0 , result);
 }
 
@@ -71,6 +74,16 @@ void test_setLastName_given_empty_should_return_0(void)
 	result = setLastName( &PersonInfo,"");
 	TEST_ASSERT_EQUAL(0 , result);
 }
+
+void test_setLastName_given_3425_should_return_0(void)
+{
+	int result;
+	struct PersonInfo_t PersonInfo;
+	
+	result = setLastName( &PersonInfo,"3425");
+	TEST_ASSERT_EQUAL(0 , result);
+}
+
 
 //testage
 
