@@ -10,7 +10,7 @@ int setFirstName(PersonInfo *info, char *name){
 		 name[j]; // use  to check the name character size
 	
 	
-	if ( j==0|| j>21) //if the character size is empty or more than 8 return  0
+	if ( j==0|| j>21) //if the character size is empty or more than 20 return  0
 	 return 0;
 	 
 	else {
@@ -30,7 +30,7 @@ int setLastName(PersonInfo *info, char *name){
 		 name[j]; // use  to check the name character size
 	
 	
-	if ( j==0|| j>21) //if the character size is empty or more than 8 return  0
+	if ( j==0|| j>21) //if the character size is empty or more than 20 return  0
 	 return 0;
 	 
 	else {
@@ -45,7 +45,7 @@ int setLastName(PersonInfo *info, char *name){
 int setAge(PersonInfo *info, int age){
 	info->age = age;
 	
-    if ( (info->age >= 131) || (info->age <= 0)) //while age more than 130 and less than 0 return 0;
+    if ( (info->age >= 130) || (info->age <= 0)) //while age more than 130 and less than 0 return 0;
 	return 0;
 	
 	else

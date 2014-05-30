@@ -17,8 +17,7 @@ void test_setFirstName_given_Scarlet_should_return_1_for_ValidName(void)
 	
 	result = setFirstName( &PersonInfo,  "Scarlet");
 	TEST_ASSERT_EQUAL ( 1  , result);
-		
-	
+			
 }
 
 
@@ -155,7 +154,7 @@ void test_setTelephone_given_1234567_should_return_0(void)
 	int result;
 	struct PersonInfo_t PersonInfo;
 	
-	result = setTelephone(&PersonInfo,1234567);
+	result = setTelephone(&PersonInfo,1234567); // 7 digit number
 	TEST_ASSERT_EQUAL(0 , result);
 }
 
@@ -164,6 +163,6 @@ void test_setTelephone_given_12345678_should_return_0(void)
 	int result;
 	struct PersonInfo_t PersonInfo;
 	
-	result = setTelephone(&PersonInfo,123456789);
+	result = setTelephone(&PersonInfo,123456789); // 8 digint number
 	TEST_ASSERT_EQUAL(0 , result);
 }
